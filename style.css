@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Pacifico&family=Rubik+Beastly&display=swap');
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+  margin-left: 10px;
+}
+
+.myImg {
+  margin-top: -50px;
+  padding-left: 20px;
+  flex-basis: 220px;
+}
+
+.myAudio {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 25%;
+  margin-bottom: -7%;
+  background-color: black;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80%;
+  margin-bottom: 1em;
+  background-color: black;
+}
+
+.greetings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70;
+  background-color: black;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.knowlege {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  height: 50px;
+  color: #0F0;
+  background-color: black;
+  flex-direction: column;
+  padding: 5%;
+  bottom: 5%;
+  z-index: auto;
+}
+
+.container {
+  grid-template-areas: 
+     "h  h  h"
+     "n  g k"
+     "f  f  f"; 
+   display: grid;
+   grid-gap: 2%;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15%;
+  background-color: #0F0;
+}
+
+.header { grid-area: h; }
+.navigation { grid-area: n; }
+.greetings { grid-area: g; }
+.knowlege { grid-area: k; }
+.footer { grid-area: f; }
+
+.menu {
+  padding: 15px;
+  background: #0F0;
+  width: 200px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,.1);
+  font-family: 'Bangers', cursive;
+}
+
+.menu h3 {
+  font-size: 20px;
+  color: rgba(0,0,0,.6);
+  margin: 0 0 10px;
+  padding: 0 5px;
+  position: relative;
+}
+
+.menu h3:after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: red;
+  position: absolute;
+  right: 5px;
+  bottom: 2px;
+  box-shadow: -8px -8px grey, 0 -8px grey, -8px 0 grey;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+  border-top: 1px solid rgba(0,0,0,.3);
+}
+
+.menu li {margin: 12px 0 0 0px;}
+.menu a {
+  text-decoration: none;
+  display: block;  
+  font-size: 20px;
+  color: rgba(0,0,0,.6);
+  padding: 5px;
+  position: relative;
+  transition: .3s linear;
+}
+
+.menu a:after {
+  content:"\f18e";
+  font-family: FontAwesome;
+  position: absolute;
+  right: 5px;
+  color: dark;
+  transition: .2s linear;
+}
+
+.menu a:hover {
+  background: red;
+  color: dark;
+}
+
+p {
+    font-family: 'Pacifico', cursive;
+    color: #0F0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+h1 {
+font-family: 'Rubik Beastly', cursive;
+  color: #0F0;
+  font-size: 4rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Bangers', cursive;
+  color: rgb(219, 8, 8);
+  text-align: center;
+  font-size: 2rem;
+}
+
+.text {
+  font-family: Verdana, Geneva, sans-serif;
+  color: rgb(219, 8, 8);
+  text-align: center;
+  font-size: 1rem;
+}
+
+.textAfter {
+  font-family: 'Bangers', cursive;
+  color: rgb(219, 8, 8);
+  text-align: center;
+  font-size: 1rem;
+}
